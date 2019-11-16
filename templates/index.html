@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .row {
+        display: flex;
+      }
+
+      /* Create two equal columns that sit next to each other */
+      .left_column {
+        flex: 10%;
+        padding: 10px;
+        height: 600px;
+        text-align: center;
+      }
+
+      .right_column {
+        flex: 90%;
+        padding: 40px;
+        height: 600px;
+      }
+
+      .button5 {
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display:inline-block;
+        padding: 15px;
+        font-size: 40px;
+        margin: 4px 2px;
+        cursor: pointer;
+        color: rgb(6, 19, 6);
+      }
+
+      .center {
+        display: block;
+        margin-left: 10%;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      </style>
+  </head>
+
+  <body>
+
+    <div class="row">
+      <div class="left_column" style="background-color:#50c1e9;">
+        <h4 align="center"> Navigation</h4>
+        <a class="button5" href="/redirecthome" style="decoration: none;font-size: smaller;text-align:left;">Home</a><br><br>
+        <a class="button5" href="/upload" style="decoration: none;font-size: smaller;text-align:left;">Upload</a><br><br>
+        <a class="button5" href="/prediction" style="decoration: none;font-size: smaller;text-align:left;">Prediction</a><br><br>
+        
+      </div>
+
+      <div class="right_column" style="background-color:#f1f2f6;">
+        <h2> RESNET-50 Image Classification</h2>
+        <p>
+          Classification process:
+          <ul>
+
+          <li>1. Upload the Image.  </li>
+          <li>2. Use pretrained RESNET-50 to classify the Image.</li>
+          <li>3. Display the image & make prediction</li>
+          
+          </ul>
+
+          <img src="/static/resnet.png" alt="Trax Transaction Image" class="center" style="width:550px;height:300px;" >
+        </p>
+          
+        
+      </div>
+    </div>
+
+  </body>
+</html>
